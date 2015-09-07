@@ -7,9 +7,7 @@
 <#@ import namespace="EnvDTE" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
-<#@ import namespace="System.Runtime.Remoting.Messaging" #>
-<#@ include file="../../T4Functions.tt" #>
-<?xml version="1.0" encoding="utf-8" ?> 
+<#@ import namespace="System.Runtime.Remoting.Messaging" #><#@ include file="../../T4Functions.tt" #><?xml version="1.0" encoding="utf-8" ?> 
 <#
 
 string itemTemplatesDirectory = Path.GetDirectoryName(Host.TemplateFile);

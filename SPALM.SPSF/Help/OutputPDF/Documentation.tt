@@ -9,7 +9,6 @@
 <HEAD>
 <TITLE><#= GetGuidancePackageName() #></TITLE>
 <# 
-
 string htmlDirectory = Path.GetDirectoryName(Host.TemplateFile);
 string globalFilesDir = Path.Combine(htmlDirectory, "GlobalFiles");
 string recipeFilesDir = Path.Combine(htmlDirectory, "Recipes");

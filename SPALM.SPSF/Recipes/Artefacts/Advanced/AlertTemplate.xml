@@ -4,12 +4,12 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 Name="AlertTemplate"
 xmlns="http://schemas.microsoft.com/pag/gax-core"
 Bound="false">
-    <DocumentationLinks>
-        <Link Url="http://msdn.microsoft.com/en-us/library/ms452873.aspx" Caption="MS SharePoint Developer Documentation Team Blog: Customizing Alert Notifications and Alert Templates in Windows SharePoint Services 3.0" Kind="Documentation"/>
-        <Link Url="http://blogs.msdn.com/sharepointdeveloperdocs/archive/2007/12/14/how-to-customizing-alert-emails-using-ialertnotificationhandler.aspx" Caption="MS SharePoint Developer Documentation Team Blog: How To: Customizing alert emails using IAlertNotifyHandler"  Kind="Documentation"/>
-    </DocumentationLinks>
-    <xi:include href="../../../TypeAlias.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-    <Caption>Alert Template</Caption>
+  <DocumentationLinks>
+    <Link Url="http://msdn.microsoft.com/en-us/library/ms452873.aspx" Caption="MS SharePoint Developer Documentation Team Blog: Customizing Alert Notifications and Alert Templates in Windows SharePoint Services 3.0" Kind="Documentation"/>
+    <Link Url="http://blogs.msdn.com/sharepointdeveloperdocs/archive/2007/12/14/how-to-customizing-alert-emails-using-ialertnotificationhandler.aspx" Caption="MS SharePoint Developer Documentation Team Blog: How To: Customizing alert emails using IAlertNotifyHandler"  Kind="Documentation"/>
+  </DocumentationLinks>
+  <xi:include href="../../../TypeAlias.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <Caption>Alert Template</Caption>
   <Description>Adds an alert template which can be used to send customized alerts.</Description>
   <HostData>
     <Icon File="Help/Icons/icon_Advanced.ico" />
@@ -28,8 +28,8 @@ Bound="false">
         <spsf:Author>Matthias Einig</spsf:Author>
       </spsf:Authors>
       <spsf:VersionHistory>
-          <spsf:VersionHistoryEntry>1.1 Updated Documentation</spsf:VersionHistoryEntry>
-          <spsf:VersionHistoryEntry>1.0 Initial Recipe</spsf:VersionHistoryEntry>
+        <spsf:VersionHistoryEntry>1.1 Updated Documentation</spsf:VersionHistoryEntry>
+        <spsf:VersionHistoryEntry>1.0 Initial Recipe</spsf:VersionHistoryEntry>
       </spsf:VersionHistory>
       <spsf:WebPageContent>
         <![CDATA[Alerts are an e-mail subscription notification service in Windows SharePoint Services 3.0. Users can create alerts to be notified of changes to list items (item level alert), documents, lists (list level alert), or document libraries. Alerts in Windows SharePoint Services 3.0 are quite flexible; when you create an alert you have options such as when to be notified and what kind of changes will trigger the alert. Alerts can be managed by users and administrators and customized by developers.

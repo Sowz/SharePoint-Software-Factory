@@ -1,1 +1,499 @@
-﻿ErrorGeneratingOutput
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HostData xmlns="http://schemas.microsoft.com/pag/gax-core">
+    <Icon File="SPSF.ico" />
+					
+		<!-- SPSF Projects -->
+		<Menu Name="SPSFProjectProjects" Text="SPSF Projects" Priority="1">
+		  <CommandBar Name="Project"/>
+		</Menu>
+		<Menu Name="SPSFSolutionProjects" Text="SPSF Projects" Priority="1">
+		  <CommandBar Name="Solution" />
+		</Menu>
+		<Menu Name="SPSFSolutionFolderProjects" Text="SPSF Projects" Priority="1">
+		  <CommandBar Name="Solution Folder"/>
+		</Menu>
+		<Menu Name="SPSFFolderProjects" Text="SPSF Projects" Priority="1">
+		  <CommandBar Name="Folder"/>
+		</Menu>
+		<Menu Name="SPSFItemProjects" Text="SPSF Projects" Priority="1">
+		  <CommandBar Name="Item"/>
+		</Menu>	
+						
+		<!-- SPSF Artefacts -->
+		<Menu Name="SPSFProjectArtefacts" Text="SPSF Artefacts" Priority="2">
+		  <CommandBar Name="Project"/>
+		</Menu>
+		<Menu Name="SPSFSolutionArtefacts" Text="SPSF Artefacts" Priority="2">
+		  <CommandBar Name="Solution" />
+		</Menu>
+		<Menu Name="SPSFSolutionFolderArtefacts" Text="SPSF Artefacts" Priority="2">
+		  <CommandBar Name="Solution Folder"/>
+		</Menu>
+		<Menu Name="SPSFFolderArtefacts" Text="SPSF Artefacts" Priority="2">
+		  <CommandBar Name="Folder"/>
+		</Menu>
+		<Menu Name="SPSFItemArtefacts" Text="SPSF Artefacts" Priority="2">
+		  <CommandBar Name="Item"/>
+		</Menu>	
+						
+			<!-- Features -->
+			<Menu Name="SPSFProjectFeatures" Text="Features" Priority="1">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFeatures" Text="Features" Priority="1">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderFeatures" Text="Features" Priority="1">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderFeatures" Text="Features" Priority="1">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemFeatures" Text="Features" Priority="1">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Lists and Libaries -->
+			<Menu Name="SPSFProjectListAndDoc" Text="Lists and Libaries" Priority="2">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionListAndDoc" Text="Lists and Libaries" Priority="2">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderListAndDoc" Text="Lists and Libaries" Priority="2">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderListAndDoc" Text="Lists and Libaries" Priority="2">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemListAndDoc" Text="Lists and Libaries" Priority="2">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Webs and Sites -->
+			<Menu Name="SPSFProjectSites" Text="Webs and Sites" Priority="3">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionSites" Text="Webs and Sites" Priority="3">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderSites" Text="Webs and Sites" Priority="3">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderSites" Text="Webs and Sites" Priority="3">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemSites" Text="Webs and Sites" Priority="3">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Custom Actions and Ribbons -->
+			<Menu Name="SPSFProjectCustomActions" Text="Custom Actions and Ribbons" Priority="4">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionCustomActions" Text="Custom Actions and Ribbons" Priority="4">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderCustomActions" Text="Custom Actions and Ribbons" Priority="4">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderCustomActions" Text="Custom Actions and Ribbons" Priority="4">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemCustomActions" Text="Custom Actions and Ribbons" Priority="4">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Event Receivers -->
+			<Menu Name="SPSFProjectEvents" Text="Event Receivers" Priority="5">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionEvents" Text="Event Receivers" Priority="5">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderEvents" Text="Event Receivers" Priority="5">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderEvents" Text="Event Receivers" Priority="5">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemEvents" Text="Event Receivers" Priority="5">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- WebParts -->
+			<Menu Name="SPSFProjectWebParts" Text="WebParts" Priority="6">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionWebParts" Text="WebParts" Priority="6">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderWebParts" Text="WebParts" Priority="6">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderWebParts" Text="WebParts" Priority="6">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemWebParts" Text="WebParts" Priority="6">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Field Types -->
+			<Menu Name="SPSFProjectFieldTypes" Text="Field Types" Priority="7">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFieldTypes" Text="Field Types" Priority="7">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderFieldTypes" Text="Field Types" Priority="7">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderFieldTypes" Text="Field Types" Priority="7">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemFieldTypes" Text="Field Types" Priority="7">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Publishing -->
+			<Menu Name="SPSFProjectPublishing" Text="Publishing" Priority="8">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionPublishing" Text="Publishing" Priority="8">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderPublishing" Text="Publishing" Priority="8">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderPublishing" Text="Publishing" Priority="8">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemPublishing" Text="Publishing" Priority="8">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Import -->
+			<Menu Name="SPSFProjectImport" Text="Import" Priority="9">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionImport" Text="Import" Priority="9">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderImport" Text="Import" Priority="9">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderImport" Text="Import" Priority="9">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemImport" Text="Import" Priority="9">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Application Pages -->
+			<Menu Name="SPSFProjectApplicationPages" Text="Application Pages" Priority="10">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionApplicationPages" Text="Application Pages" Priority="10">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderApplicationPages" Text="Application Pages" Priority="10">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderApplicationPages" Text="Application Pages" Priority="10">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemApplicationPages" Text="Application Pages" Priority="10">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- ASP.NET -->
+			<Menu Name="SPSFProjectASPNET" Text="ASP.NET" Priority="11">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionASPNET" Text="ASP.NET" Priority="11">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderASPNET" Text="ASP.NET" Priority="11">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderASPNET" Text="ASP.NET" Priority="11">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemASPNET" Text="ASP.NET" Priority="11">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Workflows -->
+			<Menu Name="SPSFProjectWorkflows" Text="Workflows" Priority="12">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionWorkflows" Text="Workflows" Priority="12">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderWorkflows" Text="Workflows" Priority="12">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderWorkflows" Text="Workflows" Priority="12">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemWorkflows" Text="Workflows" Priority="12">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Business Connectivity Services -->
+			<Menu Name="SPSFProjectBCS" Text="Business Connectivity Services" Priority="13">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionBCS" Text="Business Connectivity Services" Priority="13">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderBCS" Text="Business Connectivity Services" Priority="13">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderBCS" Text="Business Connectivity Services" Priority="13">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemBCS" Text="Business Connectivity Services" Priority="13">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Advanced -->
+			<Menu Name="SPSFProjectAdvanced" Text="Advanced" Priority="14">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionAdvanced" Text="Advanced" Priority="14">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderAdvanced" Text="Advanced" Priority="14">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderAdvanced" Text="Advanced" Priority="14">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemAdvanced" Text="Advanced" Priority="14">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Security -->
+			<Menu Name="SPSFProjectSecurity" Text="Security" Priority="15">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionSecurity" Text="Security" Priority="15">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderSecurity" Text="Security" Priority="15">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderSecurity" Text="Security" Priority="15">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemSecurity" Text="Security" Priority="15">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Files -->
+			<Menu Name="SPSFProjectFiles" Text="Files" Priority="16">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFiles" Text="Files" Priority="16">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderFiles" Text="Files" Priority="16">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderFiles" Text="Files" Priority="16">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemFiles" Text="Files" Priority="16">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- Silverlight -->
+			<Menu Name="SPSFProjectSilverlight" Text="Silverlight" Priority="17">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionSilverlight" Text="Silverlight" Priority="17">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderSilverlight" Text="Silverlight" Priority="17">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderSilverlight" Text="Silverlight" Priority="17">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemSilverlight" Text="Silverlight" Priority="17">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+			<!-- PowerShell -->
+			<Menu Name="SPSFProjectPowerShell" Text="PowerShell" Priority="18">
+			  <CommandBar Menu="SPSFProjectArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionPowerShell" Text="PowerShell" Priority="18">
+			  <CommandBar Menu="SPSFSolutionArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderPowerShell" Text="PowerShell" Priority="18">
+			  <CommandBar Menu="SPSFSolutionFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFFolderPowerShell" Text="PowerShell" Priority="18">
+			  <CommandBar Menu="SPSFFolderArtefacts"/>
+			</Menu>
+			<Menu Name="SPSFItemPowerShell" Text="PowerShell" Priority="18">
+			  <CommandBar Menu="SPSFItemArtefacts"/>
+			</Menu>	
+							
+		<!-- SPSF Deploy and Debug -->
+		<Menu Name="SPSFProjectDevelopment" Text="SPSF Deploy and Debug" Priority="3">
+		  <CommandBar Name="Project"/>
+		</Menu>
+		<Menu Name="SPSFSolutionDevelopment" Text="SPSF Deploy and Debug" Priority="3">
+		  <CommandBar Name="Solution" />
+		</Menu>
+		<Menu Name="SPSFSolutionFolderDevelopment" Text="SPSF Deploy and Debug" Priority="3">
+		  <CommandBar Name="Solution Folder"/>
+		</Menu>
+		<Menu Name="SPSFFolderDevelopment" Text="SPSF Deploy and Debug" Priority="3">
+		  <CommandBar Name="Folder"/>
+		</Menu>
+		<Menu Name="SPSFItemDevelopment" Text="SPSF Deploy and Debug" Priority="3">
+		  <CommandBar Name="Item"/>
+		</Menu>	
+						
+			<!-- Quick Deploy -->
+			<Menu Name="SPSFProjectQuickDeploy" Text="Quick Deploy" Priority="1">
+			  <CommandBar Menu="SPSFProjectDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFSolutionQuickDeploy" Text="Quick Deploy" Priority="1">
+			  <CommandBar Menu="SPSFSolutionDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderQuickDeploy" Text="Quick Deploy" Priority="1">
+			  <CommandBar Menu="SPSFSolutionFolderDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFFolderQuickDeploy" Text="Quick Deploy" Priority="1">
+			  <CommandBar Menu="SPSFFolderDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFItemQuickDeploy" Text="Quick Deploy" Priority="1">
+			  <CommandBar Menu="SPSFItemDevelopment"/>
+			</Menu>	
+							
+			<!-- Deploy Sandboxed Solutions Remotely -->
+			<Menu Name="SPSFProjectSandboxedDeployment" Text="Deploy Sandboxed Solutions Remotely" Priority="2">
+			  <CommandBar Menu="SPSFProjectDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFSolutionSandboxedDeployment" Text="Deploy Sandboxed Solutions Remotely" Priority="2">
+			  <CommandBar Menu="SPSFSolutionDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderSandboxedDeployment" Text="Deploy Sandboxed Solutions Remotely" Priority="2">
+			  <CommandBar Menu="SPSFSolutionFolderDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFFolderSandboxedDeployment" Text="Deploy Sandboxed Solutions Remotely" Priority="2">
+			  <CommandBar Menu="SPSFFolderDevelopment"/>
+			</Menu>
+			<Menu Name="SPSFItemSandboxedDeployment" Text="Deploy Sandboxed Solutions Remotely" Priority="2">
+			  <CommandBar Menu="SPSFItemDevelopment"/>
+			</Menu>	
+							
+		<!-- SPSF Test and Analyze -->
+		<Menu Name="SPSFProjectQuality" Text="SPSF Test and Analyze" Priority="4">
+		  <CommandBar Name="Project"/>
+		</Menu>
+		<Menu Name="SPSFSolutionQuality" Text="SPSF Test and Analyze" Priority="4">
+		  <CommandBar Name="Solution" />
+		</Menu>
+		<Menu Name="SPSFSolutionFolderQuality" Text="SPSF Test and Analyze" Priority="4">
+		  <CommandBar Name="Solution Folder"/>
+		</Menu>
+		<Menu Name="SPSFFolderQuality" Text="SPSF Test and Analyze" Priority="4">
+		  <CommandBar Name="Folder"/>
+		</Menu>
+		<Menu Name="SPSFItemQuality" Text="SPSF Test and Analyze" Priority="4">
+		  <CommandBar Name="Item"/>
+		</Menu>	
+						
+		<!-- SPSF Helpers -->
+		<Menu Name="SPSFProjectHelp" Text="SPSF Helpers" Priority="5">
+		  <CommandBar Name="Project"/>
+		</Menu>
+		<Menu Name="SPSFSolutionHelp" Text="SPSF Helpers" Priority="5">
+		  <CommandBar Name="Solution" />
+		</Menu>
+		<Menu Name="SPSFSolutionFolderHelp" Text="SPSF Helpers" Priority="5">
+		  <CommandBar Name="Solution Folder"/>
+		</Menu>
+		<Menu Name="SPSFFolderHelp" Text="SPSF Helpers" Priority="5">
+		  <CommandBar Name="Folder"/>
+		</Menu>
+		<Menu Name="SPSFItemHelp" Text="SPSF Helpers" Priority="5">
+		  <CommandBar Name="Item"/>
+		</Menu>	
+						
+			<!-- SP Helpers -->
+			<Menu Name="SPSFProjectSPHelpers" Text="SP Helpers" Priority="1">
+			  <CommandBar Menu="SPSFProjectHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionSPHelpers" Text="SP Helpers" Priority="1">
+			  <CommandBar Menu="SPSFSolutionHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderSPHelpers" Text="SP Helpers" Priority="1">
+			  <CommandBar Menu="SPSFSolutionFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFFolderSPHelpers" Text="SP Helpers" Priority="1">
+			  <CommandBar Menu="SPSFFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFItemSPHelpers" Text="SP Helpers" Priority="1">
+			  <CommandBar Menu="SPSFItemHelp"/>
+			</Menu>	
+							
+			<!-- Shortcuts -->
+			<Menu Name="SPSFProjectShortcuts" Text="Shortcuts" Priority="2">
+			  <CommandBar Menu="SPSFProjectHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionShortcuts" Text="Shortcuts" Priority="2">
+			  <CommandBar Menu="SPSFSolutionHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderShortcuts" Text="Shortcuts" Priority="2">
+			  <CommandBar Menu="SPSFSolutionFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFFolderShortcuts" Text="Shortcuts" Priority="2">
+			  <CommandBar Menu="SPSFFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFItemShortcuts" Text="Shortcuts" Priority="2">
+			  <CommandBar Menu="SPSFItemHelp"/>
+			</Menu>	
+							
+			<!-- Helpers -->
+			<Menu Name="SPSFProjectHelpers" Text="Helpers" Priority="3">
+			  <CommandBar Menu="SPSFProjectHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionHelpers" Text="Helpers" Priority="3">
+			  <CommandBar Menu="SPSFSolutionHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderHelpers" Text="Helpers" Priority="3">
+			  <CommandBar Menu="SPSFSolutionFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFFolderHelpers" Text="Helpers" Priority="3">
+			  <CommandBar Menu="SPSFFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFItemHelpers" Text="Helpers" Priority="3">
+			  <CommandBar Menu="SPSFItemHelp"/>
+			</Menu>	
+							
+			<!-- Configuration -->
+			<Menu Name="SPSFProjectConfiguration" Text="Configuration" Priority="4">
+			  <CommandBar Menu="SPSFProjectHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionConfiguration" Text="Configuration" Priority="4">
+			  <CommandBar Menu="SPSFSolutionHelp"/>
+			</Menu>
+			<Menu Name="SPSFSolutionFolderConfiguration" Text="Configuration" Priority="4">
+			  <CommandBar Menu="SPSFSolutionFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFFolderConfiguration" Text="Configuration" Priority="4">
+			  <CommandBar Menu="SPSFFolderHelp"/>
+			</Menu>
+			<Menu Name="SPSFItemConfiguration" Text="Configuration" Priority="4">
+			  <CommandBar Menu="SPSFItemHelp"/>
+			</Menu>	
+			  
+</HostData>  
+  

@@ -1,13 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <#@ template language="C#" hostspecific="true" #>
 <#@ output extension="xml" hostspecific="true" #>
-<#@ assembly Name="F:\TFS\SPSF\Dev\Source\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.Common.dll" #>
-<#@ assembly Name="F:\TFS\SPSF\Dev\Source\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.VisualStudio.Library.dll" #>
-<#@ assembly Name="F:\TFS\SPSF\Dev\Source\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.dll" #>
-<#@ assembly Name="F:\TFS\SPSF\Dev\Source\Libraries\OpenGAX\Microsoft.Practices.WizardFramework.dll" #>
-<#@ assembly Name="F:\TFS\SPSF\Dev\Source\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.VisualStudio.dll" #>
+<#@ assembly Name="C:\Users\Administrator\Source\Repos\SharePoint-Software-Factory\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.Common.dll" #>
+<#@ assembly Name="C:\Users\Administrator\Source\Repos\SharePoint-Software-Factory\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.VisualStudio.Library.dll" #>
+<#@ assembly Name="C:\Users\Administrator\Source\Repos\SharePoint-Software-Factory\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.dll" #>
+<#@ assembly Name="C:\Users\Administrator\Source\Repos\SharePoint-Software-Factory\Libraries\OpenGAX\Microsoft.Practices.WizardFramework.dll" #>
+<#@ assembly Name="C:\Users\Administrator\Source\Repos\SharePoint-Software-Factory\Libraries\OpenGAX\Microsoft.Practices.RecipeFramework.VisualStudio.dll" #>
 <#@ import namespace="System.Reflection" #>
 <#@ import namespace="System.IO" #>
-<#@ include file="T4Functions.tt" #><?xml version="1.0" encoding="utf-8" ?>
+<#@ include file="T4Functions.tt" #>
 <Types xmlns="http://schemas.microsoft.com/pag/gax-core">
 	<TypeAlias Name="Evaluator" Type="Microsoft.Practices.RecipeFramework.Library.ValueProviders.ExpressionEvaluatorValueProvider2,Microsoft.Practices.RecipeFramework.Library" />
     <TypeAlias Name="FirstSelectedProject" Type="Microsoft.Practices.RecipeFramework.Library.ValueProviders.FirstSelectedProject, Microsoft.Practices.RecipeFramework.Library" />

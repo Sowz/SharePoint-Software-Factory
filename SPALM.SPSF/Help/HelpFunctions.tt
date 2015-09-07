@@ -1,10 +1,10 @@
 <#@ template language="C#" hostspecific="true" #>
 <#@ assembly name="System.Xml.dll" #>
 <#@ assembly Name="envdte" #>
-<#@ assembly name="F:\TFS\SPSF\Dev\Source\Libraries\OpenGAX\MvP.Xml.dll" #>
+<#@ assembly name="C:\Users\Administrator\Source\Repos\SharePoint-Software-Factory\Libraries\OpenGAX\MvP.Xml.dll" #>
 <#@ assembly name="System.Xml.Linq" #>
 <#@ assembly name="System.Windows.Forms" #>
-<#@ assembly name="F:\TFS\SPSF\Dev\Source\SPALM.SPSF\Binaries\SgmlReaderDll.dll" #>
+<#@ assembly name="C:\Users\Administrator\Source\Repos\SharePoint-Software-Factory\SPALM.SPSF\Binaries\SgmlReaderDll.dll" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Xml" #>
 <#@ import namespace="System.Xml.Serialization" #>
@@ -19,7 +19,6 @@
 <#@ import namespace="Sgml" #>
 <#@ import namespace="System.Windows.Forms" #>
 <#@ include file="../T4Functions.tt" #><#+
-
 [Serializable]
 public class HelpPage
 {

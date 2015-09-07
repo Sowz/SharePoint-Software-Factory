@@ -1,1 +1,1705 @@
-ErrorGeneratingOutput
+<?xml version="1.0" encoding="utf-8" ?>
+  <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  Name="CreateBindings"
+  xmlns="http://schemas.microsoft.com/pag/gax-core">  
+  <Types>
+    <TypeAlias Name="Evaluator" Type="Microsoft.Practices.RecipeFramework.Library.ValueProviders.ExpressionEvaluatorValueProvider2,Microsoft.Practices.RecipeFramework.Library" />
+    <TypeAlias Name="ShowHelp" Type="SPALM.SPSF.Library.Actions.ShowHelp, SPALM.SPSF.Library" />
+    <TypeAlias Name="ShowMessageBox" Type="SPALM.SPSF.Library.Actions.ShowMessageBox, SPALM.SPSF.Library" />
+   
+    <TypeAlias
+        Name="RefCreator"
+        Type="Microsoft.Practices.RecipeFramework.Library.Actions.CreateUnboundReferenceAction, Microsoft.Practices.RecipeFramework.Library"/>
+    
+    <TypeAlias
+        Name="AddProjectReference"
+        Type="SPALM.SPSF.Library.References.AddProjectReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="AddProjectReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.AddProjectReferenceTemplate, SPALM.SPSF.Library"/>
+
+
+    <TypeAlias
+        Name="SolutionFolderWSPReference"
+        Type="SPALM.SPSF.Library.References.SolutionFolderWSPReference, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+        Name="ContentReference"
+        Type="SPALM.SPSF.Library.References.ContentReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="ContentReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.ContentReferenceTemplate, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+        Name="ConfigurationReference"
+        Type="SPALM.SPSF.Library.References.ConfigurationReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="ConfigurationReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.ConfigurationReferenceTemplate, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+        Name="CustomizationReference"
+        Type="SPALM.SPSF.Library.References.CustomizationReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="CustomizationReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.CustomizationReferenceTemplate, SPALM.SPSF.Library"/>
+   
+   <TypeAlias
+        Name="FeatureReference"
+        Type="SPALM.SPSF.Library.References.FeatureReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="FeatureReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.FeatureReferenceTemplate, SPALM.SPSF.Library"/>
+   
+
+   <TypeAlias
+        Name="ElementManifestReference"
+        Type="SPALM.SPSF.Library.References.ElementManifestReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="ElementManifestReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.ElementManifestReferenceTemplate, SPALM.SPSF.Library"/>
+   
+   
+       
+    <TypeAlias
+        Name="TestReference"
+        Type="SPALM.SPSF.Library.References.TestReferenceTemplate, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="TestReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.TestReferenceTemplateeTemplate, SPALM.SPSF.Library"/>
+    
+    <TypeAlias
+        Name="SolutionFolderMSBuildReference"
+        Type="SPALM.SPSF.Library.References.SolutionFolderMSBuildReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="SolutionFolderMSBuildReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.SolutionFolderMSBuildReferenceTemplate, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+            Name="SolutionDeploymentReference"
+            Type="SPALM.SPSF.Library.References.SolutionDeploymentReference, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+      Name="ConfigureDeploymentReference"
+      Type="SPALM.SPSF.Library.References.ConfigureDeploymentReference, SPALM.SPSF.Library"/>
+ 
+    <TypeAlias
+        Name="AnyElementReference"
+        Type="SPALM.SPSF.Library.References.AnyElementReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="AnyElementReferenceTemplate"
+        Type="SPALM.SPSF.Library.References.AnyElementReferenceTemplate, SPALM.SPSF.Library"/>
+	<TypeAlias
+        Name="SharePointConfigReference"
+        Type="SPALM.SPSF.Library.References.SharePointConfigReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="AnyFileReference"
+        Type="SPALM.SPSF.Library.References.AnyFileReference, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+        Name="TTFileReference"
+        Type="SPALM.SPSF.Library.References.TTFileReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="SCCFileReference"
+        Type="SPALM.SPSF.Library.References.SCCFileReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="MSTargetsReference"
+        Type="SPALM.SPSF.Library.References.MSTargetsReference, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+            Name="SolutionHiveReference"
+            Type="SPALM.SPSF.Library.References.SolutionHiveReference, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+        Name="BatchFileReference"
+        Type="SPALM.SPSF.Library.References.BatchFileReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+        Name="WebFileReference"
+        Type="SPALM.SPSF.Library.References.WebFileReference, SPALM.SPSF.Library"/>
+
+    <TypeAlias
+           Name="WebServiceReference"
+           Type="SPALM.SPSF.Library.References.WebServiceReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+          Name="WebServiceReferenceTemplate"
+          Type="SPALM.SPSF.Library.References.WebServiceReferenceTemplate, SPALM.SPSF.Library"/>
+	<TypeAlias
+        Name="XmlMergeReference"
+        Type="SPALM.SPSF.Library.References.XmlMergeReference, SPALM.SPSF.Library"/>
+    
+	<TypeAlias
+        Name="CheckOpenSourceControlExplorer"
+        Type="SPALM.SPSF.Library.Actions.CheckOpenSourceControlExplorer, SPALM.SPSF.Library"/>
+
+   
+
+    <TypeAlias
+          Name="BCSModelReference"
+          Type="SPALM.SPSF.Library.References.BCSModelReference, SPALM.SPSF.Library"/>
+    <TypeAlias
+          Name="BCSModelReferenceTemplate"
+          Type="SPALM.SPSF.Library.References.BCSModelReferenceTemplate, SPALM.SPSF.Library"/>
+
+  </Types>
+  <Caption>SharePoint Software Factory - Recipe Bindings</Caption>
+  <HostData>
+    <Icon File="spsf.ico" />
+    <spsf:MetaData
+      Visible="false"
+      BindingType="CustomizationReference"
+      BindingTypeTemplate="CustomizationReferenceTemplate"
+      Enabled="true"
+	  ExcludeFromTests="true"
+	  HideInHelpNavigation="true"
+      CreateVSTemplate="false"
+      Category="None" xmlns:spsf="http://spsf.codeplex.com">
+      <spsf:Authors>
+        <spsf:Author>Torsten Mandelkow</spsf:Author>
+        <spsf:Author>Matthias Einig</spsf:Author>
+      </spsf:Authors>
+      <spsf:VersionHistory>
+          <spsf:VersionHistoryEntry>1.0 Initial Recipe</spsf:VersionHistoryEntry>
+      </spsf:VersionHistory>
+    </spsf:MetaData>
+  </HostData>
+  <Arguments>
+
+    <Argument Name="RecipeName">
+      <ValueProvider Type="Evaluator" Expression="CreateBindings" />
+    </Argument>
+    
+  </Arguments>
+  <Actions>
+    <Action Name="CheckOpenSourceControlExplorer" Type="CheckOpenSourceControlExplorer" />
+	
+  <!-- CreateBindings, enabled: True, visible: False --> 
+    
+
+  <!-- AlertTemplate, enabled: False, visible: False --> 
+    
+
+  <!-- TimerJobDefinition, enabled: False, visible: False --> 
+    
+
+  <!-- WebConfigModification, enabled: False, visible: False --> 
+    
+
+  <!-- WebProvisioningProvider, enabled: False, visible: False --> 
+    
+
+  <!-- AdministrationPage, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="AdministrationPageTemplateRef"
+						AssetName="Items\AdministrationPage.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- ApplicationPage, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="ApplicationPageTemplateRef"
+						AssetName="Items\ApplicationPage.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- UnsecuredApplicationPage, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="UnsecuredApplicationPageTemplateRef"
+						AssetName="Items\UnsecuredApplicationPage.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- AdministrationWebService, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="AdministrationWebServiceTemplateRef"
+						AssetName="Items\AdministrationWebService.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- CustomControl, enabled: False, visible: False --> 
+    
+
+  <!-- DelegateControlASCX, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="DelegateControlASCXTemplateRef"
+						AssetName="Items\DelegateControlASCX.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- DelegateControlCS, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="DelegateControlCSTemplateRef"
+						AssetName="Items\DelegateControlCS.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- HttpHandler, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="HttpHandlerTemplateRef"
+						AssetName="Items\HttpHandler.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- HttpModule, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="HttpModuleTemplateRef"
+						AssetName="Items\HttpModule.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- WCFWebService, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="WCFWebServiceTemplateRef"
+						AssetName="Items\WCFWebService.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- WebService, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="WebServiceTemplateRef"
+						AssetName="Items\WebService.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- WebServiceWSDL, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="WebServiceWSDLRef"
+			   Type="RefCreator"
+			   AssetName="WebServiceWSDL"
+			   ReferenceType="WebServiceReference"
+			   			   NotSandboxSupported="true"
+ 
+         />
+			
+  <!-- BCSDesignWithASMXWebService, enabled: False, visible: False --> 
+    
+
+  <!-- BCSDesignWithAssembly, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="BCSDesignWithAssemblyTemplateRef"
+						AssetName="Items\BCSDesignWithAssembly.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- BCSDesignWithWCFWebService, enabled: False, visible: False --> 
+    
+
+  <!-- BCSListInstance, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="BCSListInstanceTemplateRef"
+						AssetName="Items\BCSListInstance.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- BCSModelFromDatabaseWithClasses, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="BCSModelFromDatabaseWithClassesTemplateRef"
+						AssetName="Items\BCSModelFromDatabaseWithClasses.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- BCSModelFromDatabaseWithLINQ, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="BCSModelFromDatabaseWithLINQTemplateRef"
+						AssetName="Items\BCSModelFromDatabaseWithLINQ.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- BCSModelFromDatabaseWithSQLQueries, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="BCSModelFromDatabaseWithSQLQueriesTemplateRef"
+						AssetName="Items\BCSModelFromDatabaseWithSQLQueries.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- BCSQuickDeploy, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="BCSQuickDeployRef"
+			   Type="RefCreator"
+			   AssetName="BCSQuickDeploy"
+			   ReferenceType="BCSModelReference"
+			   			    
+         />
+			
+  <!-- BCSQuickDeployIncAssembly, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="BCSQuickDeployIncAssemblyRef"
+			   Type="RefCreator"
+			   AssetName="BCSQuickDeployIncAssembly"
+			   ReferenceType="BCSModelReference"
+			   			    
+         />
+			
+  <!-- EmptyBCSModel, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="EmptyBCSModelTemplateRef"
+						AssetName="Items\EmptyBCSModel.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- CustomActionContentType, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="CustomActionContentTypeTemplateRef"
+						AssetName="Items\CustomActionContentType.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- CustomActionFileType, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="CustomActionFileTypeTemplateRef"
+						AssetName="Items\CustomActionFileType.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- CustomActionGroup, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="CustomActionGroupTemplateRef"
+						AssetName="Items\CustomActionGroup.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- CustomActionList, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="CustomActionListTemplateRef"
+						AssetName="Items\CustomActionList.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- CustomActionListToolbar, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="CustomActionListToolbarTemplateRef"
+						AssetName="Items\CustomActionListToolbar.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- CustomActionProgId, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="CustomActionProgIdTemplateRef"
+						AssetName="Items\CustomActionProgId.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- CustomActionSite, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="CustomActionSiteTemplateRef"
+						AssetName="Items\CustomActionSite.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- CustomActionSiteActionsMenu, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="CustomActionSiteActionsMenuTemplateRef"
+						AssetName="Items\CustomActionSiteActionsMenu.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- HideCustomAction, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="HideCustomActionTemplateRef"
+						AssetName="Items\HideCustomAction.vstemplate"
+											   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- EmailEventReceiver, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="EmailEventReceiverTemplateRef"
+						AssetName="Items\EmailEventReceiver.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- ItemEventReceiver, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ItemEventReceiverTemplateRef"
+						AssetName="Items\ItemEventReceiver.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- ListEventReceiver, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ListEventReceiverTemplateRef"
+						AssetName="Items\ListEventReceiver.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- SecurityEventReceiver, enabled: False, visible: False --> 
+    
+
+  <!-- WebEventReceiver, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="WebEventReceiverTemplateRef"
+						AssetName="Items\WebEventReceiver.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- EmptyFeature, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="FeatureReferenceTemplate"
+						Name="EmptyFeatureTemplateRef"
+						AssetName="Items\EmptyFeature.vstemplate"
+											   					   					    />
+					
+  <!-- EmptyFeatureActivationDependency14, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="EmptyFeatureActivationDependency14Ref"
+			   Type="RefCreator"
+			   AssetName="EmptyFeatureActivationDependency14"
+			   ReferenceType="XmlMergeReference"
+			   SharePointVersions="14;15"
+					XPath="/ns:Feature"
+					XPathNamespace="http://schemas.microsoft.com/sharepoint/"
+			    
+         />
+			
+  <!-- EmptyFeatureProperty, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="EmptyFeaturePropertyRef"
+			   Type="RefCreator"
+			   AssetName="EmptyFeatureProperty"
+			   ReferenceType="XmlMergeReference"
+			   XPath="/ns:Feature"
+					XPathNamespace="http://schemas.microsoft.com/sharepoint/"
+			    
+         />
+			
+  <!-- EmptyFeatureUpgradeActionContentType, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="EmptyFeatureUpgradeActionContentTypeRef"
+			   Type="RefCreator"
+			   AssetName="EmptyFeatureUpgradeActionContentType"
+			   ReferenceType="XmlMergeReference"
+			   SharePointVersions="14;15"
+					XPath="/ns:Feature"
+					XPathNamespace="http://schemas.microsoft.com/sharepoint/"
+			    
+         />
+			
+  <!-- FieldType, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeTemplateRef"
+						AssetName="Items\FieldType.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- FieldTypeChoice, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeChoiceTemplateRef"
+						AssetName="Items\FieldTypeChoice.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- FieldTypeComplexValue, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeComplexValueTemplateRef"
+						AssetName="Items\FieldTypeComplexValue.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- FieldTypeFlash, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeFlashTemplateRef"
+						AssetName="Items\FieldTypeFlash.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- FieldTypeISBN10, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeISBN10TemplateRef"
+						AssetName="Items\FieldTypeISBN10.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- FieldTypeMultiColumn, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeMultiColumnTemplateRef"
+						AssetName="Items\FieldTypeMultiColumn.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- FieldTypeRatings, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeRatingsTemplateRef"
+						AssetName="Items\FieldTypeRatings.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- FieldTypeSSN, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FieldTypeSSNTemplateRef"
+						AssetName="Items\FieldTypeSSN.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- ApplicationResourceFile, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ApplicationResourceFileRef"
+			   Type="RefCreator"
+			   AssetName="ApplicationResourceFile"
+			   ReferenceType="CustomizationReference"
+			   			   NotSandboxSupported="true"
+ 
+         />
+			
+  <!-- ClassResourceFile, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ClassResourceFileRef"
+			   Type="RefCreator"
+			   AssetName="ClassResourceFile"
+			   ReferenceType="CustomizationReference"
+			   			   NotSandboxSupported="true"
+ 
+         />
+			
+  <!-- GlobalResxFile, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GlobalResxFileRef"
+			   Type="RefCreator"
+			   AssetName="GlobalResxFile"
+			   ReferenceType="CustomizationReference"
+			   			   NotSandboxSupported="true"
+ 
+         />
+			
+  <!-- ImageFile, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ImageFileRef"
+			   Type="RefCreator"
+			   AssetName="ImageFile"
+			   ReferenceType="CustomizationReference"
+			   			   NotSandboxSupported="true"
+ 
+         />
+			
+  <!-- LayoutsFile, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="LayoutsFileRef"
+			   Type="RefCreator"
+			   AssetName="LayoutsFile"
+			   ReferenceType="CustomizationReference"
+			   			   NotSandboxSupported="true"
+ 
+         />
+			
+  <!-- ContentTypeImport, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="ContentTypeImportTemplateRef"
+						AssetName="Items\ContentTypeImport.vstemplate"
+											   					   FeatureScopes="Site"
+												    />
+					
+  <!-- ImportWSP, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="ImportWSPTemplateRef"
+						AssetName="Items\ImportWSP.vstemplate"
+											   					   					    />
+					
+  <!-- ImportWSPFromServer, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="ImportWSPFromServerTemplateRef"
+						AssetName="Items\ImportWSPFromServer.vstemplate"
+											   					   					    />
+					
+  <!-- ListInstanceImport, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="ListInstanceImportTemplateRef"
+						AssetName="Items\ListInstanceImport.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- ListTemplateImport, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="ListTemplateImportTemplateRef"
+						AssetName="Items\ListTemplateImport.vstemplate"
+											   					   FeatureScopes="Site"
+												    />
+					
+  <!-- SiteColumnImport, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="SiteColumnImportTemplateRef"
+						AssetName="Items\SiteColumnImport.vstemplate"
+											   					   FeatureScopes="Site"
+												    />
+					
+  <!-- ContentType, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ContentTypeTemplateRef"
+						AssetName="Items\ContentType.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- ContentTypeBinding, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ContentTypeBindingTemplateRef"
+						AssetName="Items\ContentTypeBinding.vstemplate"
+											   					   FeatureScopes="Site"
+												    />
+					
+  <!-- ContentTypeCustomForm, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ContentTypeCustomFormRef"
+			   Type="RefCreator"
+			   AssetName="ContentTypeCustomForm"
+			   ReferenceType="XmlMergeReference"
+			   XPath="/ns:Elements/ns:ContentType"
+					XPathNamespace="http://schemas.microsoft.com/sharepoint/"
+			    
+         />
+			
+  <!-- ContentTypeDocumentTemplate, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ContentTypeDocumentTemplateRef"
+			   Type="RefCreator"
+			   AssetName="ContentTypeDocumentTemplate"
+			   ReferenceType="XmlMergeReference"
+			   XPath="/ns:Elements/ns:ContentType"
+					XPathNamespace="http://schemas.microsoft.com/sharepoint/"
+			    
+         />
+			
+  <!-- ContentTypeEventReceiver, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ContentTypeEventReceiverRef"
+			   Type="RefCreator"
+			   AssetName="ContentTypeEventReceiver"
+			   ReferenceType="XmlMergeReference"
+			   XPath="/ns:Elements/ns:ContentType"
+					XPathNamespace="http://schemas.microsoft.com/sharepoint/"
+			    
+         />
+			
+  <!-- ContentTypeFieldRef, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ContentTypeFieldRefRef"
+			   Type="RefCreator"
+			   AssetName="ContentTypeFieldRef"
+			   ReferenceType="XmlMergeReference"
+			   XPath="/ns:Elements/ns:ContentType"
+					XPathNamespace="http://schemas.microsoft.com/sharepoint/"
+			    
+         />
+			
+  <!-- LinqToSharePoint, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="LinqToSharePointTemplateRef"
+						AssetName="Items\LinqToSharePoint.vstemplate"
+											   					   					    />
+					
+  <!-- ListDefinition, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ListDefinitionTemplateRef"
+						AssetName="Items\ListDefinition.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- ListInstance, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ListInstanceTemplateRef"
+						AssetName="Items\ListInstance.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- Module, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ModuleTemplateRef"
+						AssetName="Items\Module.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- SiteColumn, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SiteColumnTemplateRef"
+						AssetName="Items\SiteColumn.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- PowerShellCmdLet, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AnyElementReferenceTemplate"
+						Name="PowerShellCmdLetTemplateRef"
+						AssetName="Items\PowerShellCmdLet.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- PowerShellPSCmdLet, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AnyElementReferenceTemplate"
+						Name="PowerShellPSCmdLetTemplateRef"
+						AssetName="Items\PowerShellPSCmdLet.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- PowerShellScript, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AnyElementReferenceTemplate"
+						Name="PowerShellScriptTemplateRef"
+						AssetName="Items\PowerShellScript.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- SPCmdLet, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="SPCmdLetTemplateRef"
+						AssetName="Items\SPCmdLet.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- SPCmdLetWithPipeBind, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="SPCmdLetWithPipeBindTemplateRef"
+						AssetName="Items\SPCmdLetWithPipeBind.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- MasterPage, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="MasterPageTemplateRef"
+						AssetName="Items\MasterPage.vstemplate"
+											   					   FeatureScopes="Site"
+												    />
+					
+  <!-- PageLayout, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="PageLayoutTemplateRef"
+						AssetName="Items\PageLayout.vstemplate"
+											   					   FeatureScopes="Site"
+												    />
+					
+  <!-- PubSiteDef, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="PubSiteDefTemplateRef"
+						AssetName="Items\PubSiteDef.vstemplate"
+											   					   					    />
+					
+  <!-- HideRibbonControl, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="HideRibbonControlTemplateRef"
+						AssetName="Items\HideRibbonControl.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- RibbonControl, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="RibbonControlTemplateRef"
+						AssetName="Items\RibbonControl.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- RibbonGroup, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="RibbonGroupTemplateRef"
+						AssetName="Items\RibbonGroup.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- RibbonSampleContentTypeButton, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="RibbonSampleContentTypeButtonTemplateRef"
+						AssetName="Items\RibbonSampleContentTypeButton.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- RibbonSampleItemFormButton, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="RibbonSampleItemFormButtonTemplateRef"
+						AssetName="Items\RibbonSampleItemFormButton.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- RibbonSampleListViewButton, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="RibbonSampleListViewButtonTemplateRef"
+						AssetName="Items\RibbonSampleListViewButton.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- RibbonSampleTab, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="RibbonSampleTabTemplateRef"
+						AssetName="Items\RibbonSampleTab.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- RibbonTab, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="RibbonTabTemplateRef"
+						AssetName="Items\RibbonTab.vstemplate"
+						SharePointVersions="14;15"
+												   					   FeatureScopes="Web;Site;WebApplication;Farm"
+												    />
+					
+  <!-- AspNetHostingPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="AspNetHostingPermissionRef"
+			   Type="RefCreator"
+			   AssetName="AspNetHostingPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- DnsPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="DnsPermissionRef"
+			   Type="RefCreator"
+			   AssetName="DnsPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- EnvironmentPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="EnvironmentPermissionRef"
+			   Type="RefCreator"
+			   AssetName="EnvironmentPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- FileIOPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="FileIOPermissionRef"
+			   Type="RefCreator"
+			   AssetName="FileIOPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- MediumCAS, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="MediumCASTemplateRef"
+						AssetName="Items\MediumCAS.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- MinimalCAS, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="MinimalCASTemplateRef"
+						AssetName="Items\MinimalCAS.vstemplate"
+											   					   					   NotSandboxSupported="true"
+							 />
+					
+  <!-- PrintingPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="PrintingPermissionRef"
+			   Type="RefCreator"
+			   AssetName="PrintingPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- ReflectionPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ReflectionPermissionRef"
+			   Type="RefCreator"
+			   AssetName="ReflectionPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- RegistryPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="RegistryPermissionRef"
+			   Type="RefCreator"
+			   AssetName="RegistryPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- SecurityPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="SecurityPermissionRef"
+			   Type="RefCreator"
+			   AssetName="SecurityPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- SharePointPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="SharePointPermissionRef"
+			   Type="RefCreator"
+			   AssetName="SharePointPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- SmtpPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="SmtpPermissionRef"
+			   Type="RefCreator"
+			   AssetName="SmtpPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- SqlClientPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="SqlClientPermissionRef"
+			   Type="RefCreator"
+			   AssetName="SqlClientPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- WebPartPermission, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="WebPartPermissionRef"
+			   Type="RefCreator"
+			   AssetName="WebPartPermission"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- SilverlightApplication, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SilverlightApplicationTemplateRef"
+						AssetName="Items\SilverlightApplication.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- SilverlightApplicationSampleDataBinding, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SilverlightApplicationSampleDataBindingTemplateRef"
+						AssetName="Items\SilverlightApplicationSampleDataBinding.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- SilverlightApplicationSampleListViewer, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SilverlightApplicationSampleListViewerTemplateRef"
+						AssetName="Items\SilverlightApplicationSampleListViewer.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- SilverlightApplicationSampleTaskAdder, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SilverlightApplicationSampleTaskAdderTemplateRef"
+						AssetName="Items\SilverlightApplicationSampleTaskAdder.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- BlankSiteDefinition, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="BlankSiteDefinitionTemplateRef"
+						AssetName="Items\BlankSiteDefinition.vstemplate"
+											   					   					    />
+					
+  <!-- FeatureStapling, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="FeatureStaplingTemplateRef"
+						AssetName="Items\FeatureStapling.vstemplate"
+											   					   FeatureScopes="Farm;Site;WebApplication"
+												    />
+					
+  <!-- TeamSiteDefinition, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="CustomizationReferenceTemplate"
+						Name="TeamSiteDefinitionTemplateRef"
+						AssetName="Items\TeamSiteDefinition.vstemplate"
+											   					   					    />
+					
+  <!-- Theme, enabled: False, visible: False --> 
+    
+
+  <!-- ThemeActivation, enabled: False, visible: False --> 
+    
+
+  <!-- AjaxWebPart, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="AjaxWebPartTemplateRef"
+						AssetName="Items\AjaxWebPart.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- ASPWebPart, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="ASPWebPartTemplateRef"
+						AssetName="Items\ASPWebPart.vstemplate"
+						SharePointVersions="12;14;15"
+												   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- FilterConsumerWebPart, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="FilterConsumerWebPartTemplateRef"
+						AssetName="Items\FilterConsumerWebPart.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- FilterProviderWebPart, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="FilterProviderWebPartTemplateRef"
+						AssetName="Items\FilterProviderWebPart.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												    />
+					
+  <!-- SharePointWebPart, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SharePointWebPartTemplateRef"
+						AssetName="Items\SharePointWebPart.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- SimpleFilterConsumerWebPart, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SimpleFilterConsumerWebPartTemplateRef"
+						AssetName="Items\SimpleFilterConsumerWebPart.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- VisualWebPart, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="VisualWebPartTemplateRef"
+						AssetName="Items\VisualWebPart.vstemplate"
+											   					   FeatureScopes="Web;Site"
+												   NotSandboxSupported="true"
+							 />
+					
+  <!-- SimpleWorkflow, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="ElementManifestReferenceTemplate"
+						Name="SimpleWorkflowTemplateRef"
+						AssetName="Items\SimpleWorkflow.vstemplate"
+											   					   FeatureScopes="Site"
+												    />
+					
+  <!-- SPDAction, enabled: False, visible: False --> 
+    
+
+  <!-- SPDActionSandboxed, enabled: False, visible: False --> 
+    
+
+  <!-- AnalyzeProjects, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="AnalyzeProjectsRef"
+			   Type="RefCreator"
+			   AssetName="AnalyzeProjects"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- ConfigureSolution, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ConfigureSolutionRef"
+			   Type="RefCreator"
+			   AssetName="ConfigureSolution"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- MigrateProjectSPSF, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="MigrateProjectSPSFRef"
+			   Type="RefCreator"
+			   AssetName="MigrateProjectSPSF"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- MigrateSolutionSPSF, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="MigrateSolutionSPSFRef"
+			   Type="RefCreator"
+			   AssetName="MigrateSolutionSPSF"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- CopyAssembly, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="CopyAssemblyRef"
+			   Type="RefCreator"
+			   AssetName="CopyAssembly"
+			   ReferenceType="SolutionDeploymentReference"
+			   			    
+         />
+			
+  <!-- CopyBoth, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="CopyBothRef"
+			   Type="RefCreator"
+			   AssetName="CopyBoth"
+			   ReferenceType="SolutionDeploymentReference"
+			   			    
+         />
+			
+  <!-- CopyToHive, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="CopyToHiveRef"
+			   Type="RefCreator"
+			   AssetName="CopyToHive"
+			   ReferenceType="SolutionHiveReference"
+			   			    
+         />
+			
+  <!-- DeploySandboxedSolution, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="DeploySandboxedSolutionRef"
+			   Type="RefCreator"
+			   AssetName="DeploySandboxedSolution"
+			   ReferenceType="SolutionDeploymentReference"
+			   			    
+         />
+			
+  <!-- UndeploySandboxedSolution, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="UndeploySandboxedSolutionRef"
+			   Type="RefCreator"
+			   AssetName="UndeploySandboxedSolution"
+			   ReferenceType="SolutionDeploymentReference"
+			   			    
+         />
+			
+  <!-- UpgradeSandboxedSolution, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="UpgradeSandboxedSolutionRef"
+			   Type="RefCreator"
+			   AssetName="UpgradeSandboxedSolution"
+			   ReferenceType="SolutionDeploymentReference"
+			   			    
+         />
+			
+  <!-- ExcludeItemFromSCC, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ExcludeItemFromSCCRef"
+			   Type="RefCreator"
+			   AssetName="ExcludeItemFromSCC"
+			   ReferenceType="SCCFileReference"
+			   			    
+         />
+			
+  <!-- GetAssemblyName, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GetAssemblyNameRef"
+			   Type="RefCreator"
+			   AssetName="GetAssemblyName"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- GetSharePointVersion, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GetSharePointVersionRef"
+			   Type="RefCreator"
+			   AssetName="GetSharePointVersion"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- LoadSharePointConfiguration, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="LoadSharePointConfigurationRef"
+			   Type="RefCreator"
+			   AssetName="LoadSharePointConfiguration"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- ManifestMakeStatic, enabled: False, visible: True --> 
+    
+
+  <!-- OpenInBrowser, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="OpenInBrowserRef"
+			   Type="RefCreator"
+			   AssetName="OpenInBrowser"
+			   ReferenceType="WebFileReference"
+			   			    
+         />
+			
+  <!-- OpenWSP, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="OpenWSPRef"
+			   Type="RefCreator"
+			   AssetName="OpenWSP"
+			   ReferenceType="CustomizationReference"
+			   			    
+         />
+			
+  <!-- ShowAboutDialog, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ShowAboutDialogRef"
+			   Type="RefCreator"
+			   AssetName="ShowAboutDialog"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- ShowProperties, enabled: False, visible: True --> 
+    
+
+  <!-- GoToCA, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GoToCARef"
+			   Type="RefCreator"
+			   AssetName="GoToCA"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- GoToDebuggingWebApp, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GoToDebuggingWebAppRef"
+			   Type="RefCreator"
+			   AssetName="GoToDebuggingWebApp"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- GoToHive, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GoToHiveRef"
+			   Type="RefCreator"
+			   AssetName="GoToHive"
+			   ReferenceType="SolutionHiveReference"
+			   			    
+         />
+			
+  <!-- GoToSolutions, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GoToSolutionsRef"
+			   Type="RefCreator"
+			   AssetName="GoToSolutions"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- GoToTraceLogs, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GoToTraceLogsRef"
+			   Type="RefCreator"
+			   AssetName="GoToTraceLogs"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- GoToTraceLogsFolder, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="GoToTraceLogsFolderRef"
+			   Type="RefCreator"
+			   AssetName="GoToTraceLogsFolder"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- OpenSPSFHelp, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="OpenSPSFHelpRef"
+			   Type="RefCreator"
+			   AssetName="OpenSPSFHelp"
+			   ReferenceType="AnyFileReference"
+			   			    
+         />
+			
+  <!-- ActivateFeature, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ActivateFeatureRef"
+			   Type="RefCreator"
+			   AssetName="ActivateFeature"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- CopyAppBinContent, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="CopyAppBinContentRef"
+			   Type="RefCreator"
+			   AssetName="CopyAppBinContent"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- DeactivateFeature, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="DeactivateFeatureRef"
+			   Type="RefCreator"
+			   AssetName="DeactivateFeature"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- ExecAdmSvcJobs, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="ExecAdmSvcJobsRef"
+			   Type="RefCreator"
+			   AssetName="ExecAdmSvcJobs"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- OpenPrompt, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="OpenPromptRef"
+			   Type="RefCreator"
+			   AssetName="OpenPrompt"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- UninstallFeature, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="UninstallFeatureRef"
+			   Type="RefCreator"
+			   AssetName="UninstallFeature"
+			   ReferenceType="AnyElementReference"
+			   			    
+         />
+			
+  <!-- ClassLibraryProject, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AddProjectReferenceTemplate"
+						Name="ClassLibraryProjectTemplateRef"
+						AssetName="Projects\ClassLibrary\Root.vstemplate"
+											   					   					    />
+					
+  <!-- DeploymentProject, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AddProjectReferenceTemplate"
+						Name="DeploymentProjectTemplateRef"
+						AssetName="Projects\Deployment\Root.vstemplate"
+											   					   					    />
+					
+  <!-- MSBuildProcessorRecipe, enabled: True, visible: True --> 
+    
+
+  <Action
+			   Name="MSBuildProcessorRecipeRef"
+			   Type="RefCreator"
+			   AssetName="MSBuildProcessorRecipe"
+			   ReferenceType="MSTargetsReference"
+			   			    
+         />
+			
+  <!-- MSBuildTask, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="SolutionFolderMSBuildReferenceTemplate"
+						Name="MSBuildTaskTemplateRef"
+						AssetName="Items\MSBuildTask.vstemplate"
+											   					   					    />
+					
+  <!-- PowerShellProject, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AddProjectReferenceTemplate"
+						Name="PowerShellProjectTemplateRef"
+						AssetName="Projects\PowerShell\Root.vstemplate"
+											   					   					    />
+					
+  <!-- SharePointApplication14, enabled: True, visible: False --> 
+    
+
+  <!-- SharePointApplication15, enabled: True, visible: False --> 
+    
+
+  <!-- CustomizationProject14, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AddProjectReferenceTemplate"
+						Name="CustomizationProject14TemplateRef"
+						AssetName="Projects\WSP\Root14.vstemplate"
+											   					   					    />
+					
+  <!-- CustomizationProject15, enabled: True, visible: True --> 
+    
+					<Action Type="RefCreator" 
+						ReferenceType="AddProjectReferenceTemplate"
+						Name="CustomizationProject15TemplateRef"
+						AssetName="Projects\WSP\Root15.vstemplate"
+						SharePointVersions="15"
+												   					   					    />
+					
+  <Action Name="ShowMessage" Type="ShowMessageBox" Message="After installation of a new version of SPSF it is recommended to upgrade the Visual Studio solution to the new version. Follow the steps provided in the following help page." />
+
+	</Actions>
+</Recipe>

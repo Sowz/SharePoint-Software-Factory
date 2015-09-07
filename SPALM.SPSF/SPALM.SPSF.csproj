@@ -14,7 +14,7 @@
     <WarningLevel>4</WarningLevel>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>mkey.snk</AssemblyOriginatorKeyFile>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <!-- GAX 2010 -->
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -37,11 +37,12 @@
     <VsixDeploymentPath>C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\SPALM\SPSF\4.0\</VsixDeploymentPath>
     -->
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>4.0</OldToolsVersion>
-    <UpgradeBackupLocation />
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -121,11 +122,6 @@
       <DependentUpon>HelpFunctions.tt</DependentUpon>
     </None>
     <None Include="Help\ContentOverview\520_HOWTOACTIVATESPSF.html" />
-    <Content Include="..\..\..\..\SPSD\Dev\Source\SPALM.SPSD.Template.VS11\Scripts\SharePointVersions.xml">
-      <Link>SharePointVersions.xml</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="Help\OutputHTMLOnline\HelpGenerator.html">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -257,6 +253,13 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Recipes\Artefacts\Events\SecurityEventReceiver.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Recipes\CreateBindings.xml">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateBindings.tt</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -471,6 +474,7 @@
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="SharePointVersions.xml" />
     <Content Include="SPALM.SPSF.SharePointBridge.dll">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -3778,14 +3782,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Recipes\CreateBindings.xml">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CreateBindings.tt</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Recipes\Help\Helpers\ShowProperties.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -3884,10 +3880,14 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>IncludesHostData.xml</LastGenOutput>
       <SubType>Designer</SubType>
+      <Parameters>&lt;%3fxml version="1.0" encoding="utf-16"%3f&gt;
+&lt;ArrayOfParameterStorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Parameters>
     </None>
     <None Include="IncludesRecipes.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>IncludesRecipes.xml</LastGenOutput>
+      <Parameters>&lt;%3fxml version="1.0" encoding="utf-16"%3f&gt;
+&lt;ArrayOfParameterStorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Parameters>
     </None>
     <None Include="mkey.snk" />
     <None Include="Properties\Settings.settings">
@@ -3923,8 +3923,8 @@
     </Content>
     <None Include="Recipes\CreateBindings.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CreateBindings.xml</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>CreateBindings.xml</LastGenOutput>
     </None>
     <Content Include="Recipes\Projects\Solutions\BaseApplication14Actions.include">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -5674,6 +5674,12 @@
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SPALM.SPSF.Library.New\SPALM.SPSF.Library.csproj">
+      <Project>{efaed7d2-be97-4390-8ae9-9b54b9b30780}</Project>
+      <Name>SPALM.SPSF.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <RecipeFrameworkPath Condition="'$(RecipeFrameworkPath)' == ''">..\Libraries\OpenGAX</RecipeFrameworkPath>
   </PropertyGroup>
@@ -5720,23 +5726,6 @@
     <StartAction>Program</StartAction>
     <StartArguments>/rootsuffix Exp</StartArguments>
   </PropertyGroup>
-  <ItemGroup>
-    <!-- Add VS\...\PublicAssemblies to the list of places
-         to look for assemblies used by templates. -->
-    <!--
-    <T4ReferencePath Include="$(VsIdePath)PublicAssemblies\" />
-    <T4ReferencePath Include="$(ProjectDir)\" />
-    <T4ReferencePath Include="$(OutputPath)\" />
-    -->
-    <!--
-    <T4ReferencePath Include="$(ProjectDir)\..\SPCAF.Sdk\bin\$(Configuration)\" />
-    <T4ReferencePath Include="$(SolutionRoot)\SPCAF.Sdk\bin\$(Configuration)\" />
-    -->
-    <ProjectReference Include="..\SPALM.SPSF.Library\SPALM.SPSF.Library.csproj">
-      <Project>{988bbcf4-d7ed-4010-8388-37e51f84c242}</Project>
-      <Name>SPALM.SPSF.Library</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>

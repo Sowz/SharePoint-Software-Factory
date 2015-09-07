@@ -1,6 +1,6 @@
 <#@ output extension="xml" hostspecific="true" #>
 <#@ include file="../T4Functions.tt" #><?xml version="1.0" encoding="utf-8" ?>
-<Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  <Recipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   Name="CreateBindings"
   xmlns="http://schemas.microsoft.com/pag/gax-core">  
